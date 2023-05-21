@@ -1,0 +1,24 @@
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      properties:
+        questions_num:
+          type: integer
+responses:
+  200:
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          answer_text:
+            type: string
+          created_at:
+            type: string
+            example: "Fri, 30 Dec 2022 18:57:53 GMT"
+          id:
+            type: integer
+          question_text:
+            type: string

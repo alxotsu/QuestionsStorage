@@ -5,6 +5,8 @@ WORKDIR /flask
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
+EXPOSE 443
+
 COPY ./requirements.txt ./requirements.txt
 
 RUN pip install --upgrade pip \
